@@ -1,12 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2021-04-30 09:10:11
- * @LastEditTime: 2021-05-06 15:42:43
+ * @LastEditTime: 2021-05-07 11:03:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-blog/docs/.vuepress/config.js
  */
 module.exports = {
+  base: "/study_summary/",
   title: "ゞ灬迴不去的甛╰→ ",
   description: "学习工作总结",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
