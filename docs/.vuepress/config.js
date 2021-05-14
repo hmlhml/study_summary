@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-30 09:10:11
- * @LastEditTime: 2021-05-07 11:03:50
+ * @LastEditTime: 2021-05-14 17:48:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-blog/docs/.vuepress/config.js
@@ -38,6 +38,13 @@ module.exports = {
           children: [
             { title: "css", path: "/frontEnd/css/BFC" },
             { title: "内置功能", path: "/frontEnd/css/布局" },
+          ],
+        },
+        {
+          title: "3. 其他",
+          collapsable: true,
+          children: [
+            { title: "npm包版本号", path: "/frontEnd/other/npm包版本号" }
           ],
         },
       ],
