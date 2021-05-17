@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-30 09:10:11
- * @LastEditTime: 2021-05-14 17:48:26
+ * @LastEditTime: 2021-05-17 10:12:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-blog/docs/.vuepress/config.js
@@ -44,7 +44,8 @@ module.exports = {
           title: "3. 其他",
           collapsable: true,
           children: [
-            { title: "npm包版本号", path: "/frontEnd/other/npm包版本号" }
+            { title: "npm包版本号", path: "/frontEnd/other/npm包版本号" },
+            { title: "npm和yarn区别", path: "/frontEnd/other/npm和yarn区别" }
           ],
         },
       ],
