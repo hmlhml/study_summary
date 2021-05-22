@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2021-04-30 09:10:11
- * @LastEditTime: 2021-05-17 10:12:16
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-05-22 16:18:39
+ * @LastEditors: hmlhml
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-blog/docs/.vuepress/config.js
  */
@@ -42,10 +42,14 @@ module.exports = {
         },
         {
           title: "3. 其他",
-          collapsable: true,
+          collapsable: false,
           children: [
             { title: "npm包版本号", path: "/frontEnd/other/npm包版本号" },
-            { title: "npm和yarn区别", path: "/frontEnd/other/npm和yarn区别" }
+            { title: "npm和yarn区别", path: "/frontEnd/other/npm和yarn区别" },
+            { title: "webpack3和4的区别", path: "/frontEnd/other/webpack3和4的区别" },
+            { title: "hash&chunkHash&contentHash", path: "/frontEnd/other/hash&chunkHash&contentHash.md" },
+            { title: "publicPath和contentBase", path: "/frontEnd/other/devServer.publicPath 和 output.publicPath 和 output.path.md" },
+            { title: "gulp的简单用法", path: "/frontEnd/other/gulp的简单用法" },      
           ],
         },
       ],

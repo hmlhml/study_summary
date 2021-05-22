@@ -1,17 +1,17 @@
 <!--
  * @Author: your name
  * @Date: 2021-05-14 16:56:51
- * @LastEditTime: 2021-05-17 10:44:32
+ * @LastEditTime: 2021-05-17 10:52:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_summary/docs/frontEnd/other/npm包版本号.md
 -->
-### 一、版本号组成
+## 一、版本号组成
 * 主要版本号
 * 次要版本号
 * 补丁版本号
 
-### 二、~ 和 ^ 的区别
+## 二、~ 和 ^ 的区别
 * ^主版本号不会变，另外两个版本号会更新到最新
     
     `“^5.0.3”表示安装5.X.X中最新的版本`
