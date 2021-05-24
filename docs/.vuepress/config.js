@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-30 09:10:11
- * @LastEditTime: 2021-05-22 16:18:39
+ * @LastEditTime: 2021-05-23 10:42:39
  * @LastEditors: hmlhml
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-blog/docs/.vuepress/config.js
@@ -50,6 +50,7 @@ module.exports = {
             { title: "hash&chunkHash&contentHash", path: "/frontEnd/other/hash&chunkHash&contentHash.md" },
             { title: "publicPath和contentBase", path: "/frontEnd/other/devServer.publicPath 和 output.publicPath 和 output.path.md" },
             { title: "gulp的简单用法", path: "/frontEnd/other/gulp的简单用法" },      
+            { title: "基于yeoman构建gulp项目脚手架", path: "/frontEnd/other/基于yeoman构建gulp项目脚手架" },      
           ],
         },
       ],
