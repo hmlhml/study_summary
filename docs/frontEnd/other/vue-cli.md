@@ -6,23 +6,23 @@
  * @LastEditors: hmlhml
 -->
 
-## 组成
+## 一、组成
 *  作为全局命令的脚手架`@vue/cli`
 *  作为项目内集成工具的`@vue/cli-service`
 *  作为功能插件系统的`@vue/cli-plugin-xx`
 
-## 优点
+## 二、优点
 *  保留了创建项目开箱即用的优点
 *  提供了用于覆盖修改原有配置的自定义构建配置文件和其他工具配置文件
 *  Vue CLI提供了通过用户交互自行选择的一些定制化选项（eg：是否集成路由、TypeScript等），并且还能保存预设，方便下一次初始化项目使用
 
-## 使用
+## 三、使用
 
 `npm install -g @vue/cli`  
 `vue create hello-world`
 
 
-## vue-cli-service的相关命令
+## 四、vue-cli-service的相关命令
 在一个 Vue CLI 项目中，@vue/cli-service 安装了一个名为 vue-cli-service 的命令   
 
 该功能的实现主要是调用了`api.registerCommand`这个方法向vue-cli-service内部注入额外的命令，不同的命令配置相对应的options
@@ -36,17 +36,41 @@
 }
 ```
 
-## 处理静态资源
+## 五、处理静态资源
 
 * 在 JavaScript 被导入或在 template/CSS 中通过相对路径被引用。这类引用会被 webpack 处理。  
 * 放置在`public`目录下或通过绝对路径被引用。将会直接被**拷贝**，而不会经过 webpack 的处理。
 
-## webpack配置
+## 六、打包多页面应用
+在webpack.config.js中添加pages字段
+```javascript
+// vue.config.js
+module.exports = {
+  pages: {
+    index: {
+      // page 的入口
+      entry: "src/main.ts",
+      // 模板来源
+      template: "public/index.html",
+      // 在 dist/index.html 的输出
+      filename: "index.html",
+      title: "hml"
+    },
+    share: {
+      entry: "src/project/share/main.ts",
+      template: "public/share.html",
+      filename: "share.html",
+      title: "分享"
+    }
+  }
+}
+```
+## 七、webpack配置
 
-### 查看webpack配置：
+#### 查看webpack配置：
 `vue inspect > output.js`
 
-### 新增webpack配置：
+#### 新增webpack配置：
 
 在Vue.config.js中，新增`configureWebpack`或`chainWebpack`节点，来自定义webpack的打包配置。
 > 新配置的对象将会被 **webpack-merge** 合并入最终的 webpack 配置。 
@@ -81,7 +105,7 @@ module.exports = {
 
 ```
  
-## 环境变量
+## 八、环境变量
 
 ```javascript
 .env                # 在所有的环境中被载入
@@ -92,7 +116,7 @@ module.exports = {
 
 > 注意，只有 `NODE_ENV``，BASE_URL` 和以 `VUE_APP_` 开头的变量将通过 `webpack.DefinePlugin` 静态地嵌入到客户端侧的代码中。
 
-## vue-cli-service serve之源码分析
+## 九、vue-cli-service serve之源码分析
 列出主要涉及到的文件
 ```javascript
 @vue/cli-service
@@ -193,8 +217,3 @@ vue-cli3默认开启预加载，所以会出现下列的 `preload` 和 `prefetch
 <script src="/js/chunk-vendors.2bcb7758.js"></script>
 <script src="/js/index.379a1fb2.js"></script>
 ```
-
-#Preload
-
-
-Prefetch
