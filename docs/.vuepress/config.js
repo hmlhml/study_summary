@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-30 09:10:11
- * @LastEditTime: 2021-05-24 22:41:56
+ * @LastEditTime: 2021-06-02 09:38:26
  * @LastEditors: hmlhml
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-blog/docs/.vuepress/config.js
@@ -36,8 +36,8 @@ module.exports = {
           title: "2. CSS相关",
           collapsable: true,
           children: [
-            { title: "css", path: "/frontEnd/css/BFC" },
-            { title: "内置功能", path: "/frontEnd/css/布局" },
+            { title: "选择器", path: "/frontEnd/css/选择器" },
+            { title: "盒模型", path: "/frontEnd/css/盒模型" },
           ],
         },
         {
