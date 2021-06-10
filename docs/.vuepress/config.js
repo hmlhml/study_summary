@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-30 09:10:11
- * @LastEditTime: 2021-06-02 09:38:26
+ * @LastEditTime: 2021-06-09 15:58:44
  * @LastEditors: hmlhml
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-blog/docs/.vuepress/config.js
@@ -37,11 +37,22 @@ module.exports = {
           collapsable: true,
           children: [
             { title: "选择器", path: "/frontEnd/css/选择器" },
-            { title: "盒模型", path: "/frontEnd/css/盒模型" },
+            { title: "CSS3新特性", path: "/frontEnd/css/CSS3新特性" },
+            { title: "CSS层叠上下文", path: "/frontEnd/css/CSS层叠上下文" },
+            { title: "CSS盒模型", path: "/frontEnd/css/CSS盒模型" },
+            { title: "常用布局方式", path: "/frontEnd/css/常用布局方式" },
+            { title: "常见问题", path: "/frontEnd/css/常见问题" },
+          ],
+        },{
+          title: "3. JavaScript",
+          collapsable: true,
+          children: [
+            { title: "错误类型", path: "/frontEnd/javascript/错误类型" },
+            { title: "常见问题", path: "/frontEnd/javascript/常见问题" },
           ],
         },
         {
-          title: "3. 其他",
+          title: "4. 其他",
           collapsable: false,
           children: [
             { title: "npm包版本号", path: "/frontEnd/other/npm包版本号" },
