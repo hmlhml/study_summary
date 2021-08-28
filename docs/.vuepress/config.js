@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-30 09:10:11
- * @LastEditTime: 2021-06-09 15:58:44
+ * @LastEditTime: 2021-07-30 14:07:10
  * @LastEditors: hmlhml
  * @Description: In User Settings Edit
  * @FilePath: /vuepress-blog/docs/.vuepress/config.js
@@ -50,9 +50,22 @@ module.exports = {
             { title: "错误类型", path: "/frontEnd/javascript/错误类型" },
             { title: "常见问题", path: "/frontEnd/javascript/常见问题" },
           ],
+        },{
+          title: "4. 框架",
+          collapsable: true,
+          children: [
+            { title: "vue-router", path: "/frontEnd/frame/vue-router" },
+          ],
+        },{
+          title: "5.工程化",
+          collapsable: true,
+          children: [
+            { title: "性能优化", path: "/frontEnd/project/性能优化" },
+            { title: "webpack", path: "/frontEnd/project/webpack" },
+          ],
         },
         {
-          title: "4. 其他",
+          title: "6. 其他",
           collapsable: false,
           children: [
             { title: "npm包版本号", path: "/frontEnd/other/npm包版本号" },
